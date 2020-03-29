@@ -13,6 +13,9 @@ const ARTICLE_QUERY = gql`
         id
         name
       }
+      tags {
+        name
+      }
       published_at
     }
   }

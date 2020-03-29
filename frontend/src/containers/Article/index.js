@@ -32,6 +32,7 @@ const Article = () => {
                   <Moment format="MMM Do YYYY">{article.published_at}</Moment>
                 </p>
               </div>
+              {article.tags.map(t => (<p>{t.name}</p>))}
             </div>
           </div>
         );
